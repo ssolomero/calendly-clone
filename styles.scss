@@ -1,0 +1,179 @@
+body {
+    background-color: ghostwhite;
+    font-family: Lato;
+}
+
+p {
+    font-weight: 300;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    margin: 100px 300px; //300px
+    justify-content: center;
+    border-radius: 10px;
+    height: 525px;
+}
+
+#description-section {
+    flex: 1;
+    padding: 15px 30px 0 30px;
+}
+
+hgroup {
+    line-height: 0.8rem;
+    margin-bottom: 30px;
+}
+
+#event {
+    font-weight: 700;
+    color: darkslategray;
+}
+
+#scheduler, #duration {
+    font-weight: 400;
+    color: darkgray;
+}
+
+.icon-text-div {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    #duration {
+        margin: 0;
+    }
+}
+
+#calendar-section {
+
+    flex: 1;
+    padding: 15px 30px 0 30px;
+    border-left: solid .5px whitesmoke;   
+
+    h3 {
+        color: darkslategray;
+    }
+
+    #schedule-div {
+        display:flex;
+    }
+
+    #available-times-div {
+        display: none;
+        flex: 1;
+        margin-left: 10px;
+
+        .time-slot {
+
+            display: flex;
+
+            .time-btn {
+                flex: 1;
+                border: 1px solid lightblue;
+                color: dodgerblue;
+                background-color: white;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 5px;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 10px;
+
+                &:hover {
+                    border-width: 2px;
+                    border-color: dodgerblue;
+                }
+
+                &:focus {
+                    background-color: gray;
+                    color: white;
+                    outline: none;
+                    border: none;
+
+                    &:hover {
+                        border:none;
+                    }
+                }
+            }
+
+            .confirm-btn {
+                flex: 1;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 5px;
+                width: 100%;
+                height: 50px;
+                background-color: dodgerblue;
+                color: white;
+                margin-left: 5px;
+                border: none;
+            }
+        }
+
+        h4 {
+            color: darkslategray;
+            font-weight: 300;
+            margin-top: 0;
+        }
+    }
+
+    // Override FullCalendar CSS Styles
+    #calendar {
+        font-family: Lato;
+        font-weight: 300;
+        flex: 2;
+    }
+    table {
+        border: none;
+    }
+    .fc-theme-standard td, .fc-theme-standard th {
+        border:none;
+    }
+
+    // Header
+    .fc-toolbar-title {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .fc-today-button {
+        display:none;
+    }
+    .fc-prev-button, .fc-next-button {
+        color: dodgerblue;
+        background-color: white;
+        border-color: white;
+        outline: none;
+    }
+    .fc .fc-button-primary:focus {
+        box-shadow: 0;
+    }
+
+    // Days
+    .fc-col-header-cell {
+        font-weight: 300;
+        font-size: .8rem;;
+    }
+    .fc-daygrid-day {
+        font-weight: 400;
+        color:lightgray;
+    }
+    .fc-daygrid-day-events {
+        margin: 0;
+    }
+    .fc-daygrid-day-number {
+        margin: auto;
+    }
+    .fc-day-today {
+        background-color: ghostwhite;
+    }
+    .fc-day-disabled {
+        background-color: white;
+    }
+}
