@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
 
                 var containerDiv = document.getElementsByClassName("container")[0];
+                containerDiv.classList.add("time-div-active");
+                
                 document.getElementById("calendar-section").style.flex = "2";
-
-                containerDiv.style.margin = "100px 250px";
 
                 timeDiv.style.display = "initial";
 

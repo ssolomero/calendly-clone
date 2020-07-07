@@ -10,10 +10,14 @@ p {
 .container {
     background-color: white;
     display: flex;
-    margin: 100px 300px; //300px
+    margin: 100px auto; //300px
     justify-content: center;
     border-radius: 10px;
     height: 525px;
+    width: 800px;
+}
+.time-div-active {
+    width: 900px;
 }
 
 #description-section {
@@ -62,12 +66,13 @@ hgroup {
     }
 
     #schedule-div {
-        display:flex;
+        display: flex;
     }
 
     #available-times-div {
         display: none;
         flex: 1;
+        order: 2;
         margin-left: 10px;
 
         .time-slot {
@@ -175,5 +180,66 @@ hgroup {
     }
     .fc-day-disabled {
         background-color: white;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        display: block;
+        height: 85vh;
+        text-align: center;
+        width: 645px;
+        margin: 50px auto;
+        overflow: scroll;
+    }
+
+    #description-section {
+        padding-top: 30px;
+        margin: 30px 100px;
+    }
+
+    .icon-text-div {
+        justify-content: center;
+    }
+
+    #calendar-section {
+        margin: 30px 30px;
+        border-left: none;
+        border-top: solid .5px whitesmoke;  
+    }
+    #calendar {
+        max-width: 350px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 645px) {
+
+    body {
+        background-color: white;
+    }
+
+    .container {
+        background-color: none;
+        width: auto;
+        margin: 50px 0;
+    }
+
+    #description-section {
+        padding: 0;
+        margin: 30px 5%;
+    }
+
+    #calendar-section {
+        padding: 0;
+        margin: 30px 5%;
+        
+        #schedule-div {
+            display: block;
+        }
+    }
+    #calendar {
+        width: auto;
+        margin-top: 20px;
     }
 }
