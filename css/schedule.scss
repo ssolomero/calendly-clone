@@ -1,0 +1,132 @@
+.time-div-active {
+    max-width: 900px;
+}
+
+#calendar-section {
+    // flex: 1;
+    // margin: 30px; 
+
+    // Override FullCalendar CSS Styles
+    #calendar {
+        font-family: Lato;
+        font-weight: 300;
+        flex: 2;
+    }
+    table {
+        border: none;
+    }
+    .fc-theme-standard td, .fc-theme-standard th {
+        border:none;
+    }
+
+    // Header
+    .fc-toolbar-title {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .fc-today-button {
+        display:none;
+    }
+    .fc-prev-button, .fc-next-button {
+        color: dodgerblue;
+        background-color: white;
+        border-color: white;
+        outline: none;
+    }
+    .fc .fc-button-primary:focus {
+        box-shadow: 0;
+    }
+
+    // Days
+    .fc-col-header-cell {
+        font-weight: 300;
+        font-size: .8rem;;
+    }
+    .fc-daygrid-day {
+        font-weight: 400;
+        color:lightgray;
+    }
+    .fc-daygrid-day-events {
+        margin: 0;
+    }
+    .fc-daygrid-day-number {
+        margin: auto;
+    }
+    .fc-day-today {
+        background-color: ghostwhite;
+    }
+    .fc-day-disabled {
+        background-color: white;
+    }
+}
+
+#schedule-div {
+    display: flex;
+}
+
+#available-times-div {
+    display: none;
+    flex: 1;
+    order: 2;
+    margin-left: 10px;
+}
+
+.time-slot {
+    display: flex;
+}
+
+.time-btn {
+    flex: 1;
+    border: 1px solid lightblue;
+    color: dodgerblue;
+    background-color: white;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    &:hover {
+        border-width: 2px;
+        border-color: dodgerblue;
+    }
+
+    &:focus {
+        background-color: gray;
+        font-weight: 500;
+        color: white;
+        outline: none;
+        border: none;
+
+        &:hover {
+            border:none;
+        }
+    }
+}
+
+.confirm-btn {
+    flex: 1;
+    width: 100%;
+    margin-left: 5px;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+@media (max-width: 1250px) {
+    #calendar {
+        max-width: 375px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 645px) {
+        
+    #schedule-div {
+        display: block;
+    }
+
+    #calendar {
+        width: auto;
+        margin-top: 20px;
+    }
+}

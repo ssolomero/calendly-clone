@@ -12,7 +12,8 @@
         <script src='fullcalendar/main.js'></script>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/schedule.css">
 
 
     </head>
@@ -20,9 +21,9 @@
     <body>
 
         <div class="container">
-            <section id="description-section">
+            <section class="description-section">
                 <hgroup>
-                    <h4 id="scheduler">ACME Sales</h4>
+                    <h4 id="scheduler">ACME Sales</h4> 
                     <h2 id="event">Pricing Review</h2>
                     <div class="icon-text-div">
                         <img src="icons/clock.svg" alt="clock-icon">
@@ -31,7 +32,8 @@
                 </hgroup>
                 <p id=description>Our team will meet with you to review pricing options.</p>
             </section>
-            <section id="calendar-section">
+            <div class="divider"></div>
+            <section id="calendar-section" class="body-section">
                 <h3>Select a Date & Time</h3>
                 <div id="schedule-div">
                     <div id="available-times-div"><!-- Available times --></div>
@@ -42,7 +44,8 @@
 
         </div>
         
-        <script src="index.js"></script>
+        <script src="script/event.js"></script>
+        <script src="script/index.js"></script>
 
     </body>
 </html>

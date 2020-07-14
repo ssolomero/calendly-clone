@@ -1,9 +1,14 @@
-
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
 var timesAvailable = ["9:00am", "10:00am", "11:00am", "2:00pm", "3:00pm"];
 
+var event = JSON.parse(sessionStorage.getItem("eventObj"));
+console.log(event);
+
+document.getElementById("event").textContent = event.name;
+document.getElementById("scheduler").textContent = event.organizer;
+document.getElementById("duration").textContent = event.duration + "min";
+document.getElementById("description").textContent = event.description;
 
 
 // Calendar
@@ -57,11 +62,21 @@ document.addEventListener('DOMContentLoaded', function() {
                             console.log(last);
                             last.parentNode.removeChild(last.parentNode.lastChild);
                         }
-                        var para = document.createElement("button");
-                        var node = document.createTextNode("Confirm");
-                        para.classList.add("confirm-btn");
-                        para.appendChild(node);
-                        this.parentNode.appendChild(para);
+                        var confirmBtn = document.createElement("button");
+                        var confirmTxt = document.createTextNode("Confirm");
+                        confirmBtn.classList.add("confirm-btn");
+                        confirmBtn.appendChild(confirmTxt);
+                        this.parentNode.appendChild(confirmBtn);
+                        event.time = this.textContent;
+                        confirmBtn.addEventListener("click", function() { 
+                            event.date = 
+                                days[daySelected.getDay()] + ", " +
+                                months[daySelected.getMonth()] + " " + 
+                                daySelected.getDate();
+                            sessionStorage.setItem("eventObj", JSON.stringify(event));
+                            console.log(event);
+                            window.location.href = "register.html";
+                        });
                         last = this;
                     });
                 }

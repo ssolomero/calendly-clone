@@ -1,0 +1,148 @@
+.time-div-active {
+  max-width: 900px;
+}
+
+#calendar-section #calendar {
+  font-family: Lato;
+  font-weight: 300;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#calendar-section table {
+  border: none;
+}
+
+#calendar-section .fc-theme-standard td, #calendar-section .fc-theme-standard th {
+  border: none;
+}
+
+#calendar-section .fc-toolbar-title {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#calendar-section .fc-today-button {
+  display: none;
+}
+
+#calendar-section .fc-prev-button, #calendar-section .fc-next-button {
+  color: dodgerblue;
+  background-color: white;
+  border-color: white;
+  outline: none;
+}
+
+#calendar-section .fc .fc-button-primary:focus {
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+#calendar-section .fc-col-header-cell {
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+#calendar-section .fc-daygrid-day {
+  font-weight: 400;
+  color: lightgray;
+}
+
+#calendar-section .fc-daygrid-day-events {
+  margin: 0;
+}
+
+#calendar-section .fc-daygrid-day-number {
+  margin: auto;
+}
+
+#calendar-section .fc-day-today {
+  background-color: ghostwhite;
+}
+
+#calendar-section .fc-day-disabled {
+  background-color: white;
+}
+
+#schedule-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#available-times-div {
+  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 10px;
+}
+
+.time-slot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.time-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid lightblue;
+  color: dodgerblue;
+  background-color: white;
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.time-btn:hover {
+  border-width: 2px;
+  border-color: dodgerblue;
+}
+
+.time-btn:focus {
+  background-color: gray;
+  font-weight: 500;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.time-btn:focus:hover {
+  border: none;
+}
+
+.confirm-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.confirm-btn:focus {
+  outline: 0;
+}
+
+@media (max-width: 1250px) {
+  #calendar {
+    max-width: 375px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 645px) {
+  #schedule-div {
+    display: block;
+  }
+  #calendar {
+    width: auto;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=schedule.css.map */
