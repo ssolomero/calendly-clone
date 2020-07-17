@@ -123,6 +123,14 @@ hgroup {
   color: darkgray;
 }
 
+#event-time-stamp {
+  margin: 0;
+  margin-left: 5px;
+  font-weight: 400;
+  color: mediumseagreen;
+  line-height: 1.3;
+}
+
 .icon-text-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,7 +158,7 @@ hgroup {
     text-align: center;
     width: 645px;
     margin: 50px auto;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .description-section {
     padding-top: 30px;

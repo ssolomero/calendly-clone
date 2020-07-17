@@ -125,8 +125,13 @@
   margin-left: 5px;
 }
 
+.confirm-btn:hover {
+  opacity: 0.5;
+}
+
 .confirm-btn:focus {
   outline: 0;
+  opacity: 0.5;
 }
 
 @media (max-width: 1250px) {

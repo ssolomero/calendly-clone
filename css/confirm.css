@@ -1,0 +1,40 @@
+.container {
+  display: block;
+  height: 85vh;
+  text-align: center;
+  width: 645px;
+  margin: 50px auto;
+  overflow: auto;
+}
+
+.body-section, .description-section {
+  margin: 50px 100px;
+}
+
+.description-section {
+  border-top: 1px solid ghostwhite;
+  border-bottom: 1px solid ghostwhite;
+  padding-top: 25px;
+  text-align: initial;
+}
+
+@media (max-width: 1250px) {
+  .icon-text-div {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+@media (max-width: 645px) {
+  .container {
+    width: auto;
+  }
+  .description-section {
+    margin: 30px 5%;
+  }
+  .body-section {
+    margin: 30px 2%;
+  }
+}
+/*# sourceMappingURL=confirm.css.map */

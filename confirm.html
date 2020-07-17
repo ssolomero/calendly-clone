@@ -9,18 +9,20 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/confirm.css">
 
     </head>
 
     <body>
 
         <div class="container">
+            <section class="body-section">
+                <h3>Confirmed!</h3>
+                <p id="scheduler">You are scheduled with ACME Sales.</p>
+            </section>
             <section class="description-section">
-                <button class="back-btn" onclick="goBack()"><img class="arrow-icon" src="icons/arrow (1).svg" alt="back-arrow"></button>
                 <hgroup>
-                    <h4 id="scheduler">ACME Sales</h4>
-                    <h2 id="event">Pricing Review</h2>
+                    <h3 id="event">Pricing Review</h3>
                     <div class="icon-text-div">
                         <img src="icons/clock.svg" alt="clock-icon">
                         <h4 id="duration">15 min</h4>
@@ -31,21 +33,9 @@
                     </div>
                 </hgroup>
             </section>
-            <div class="divider"></div>
-            <section id="register-section" class="body-section">
-                <form action="confirm.html">
-                    <h3>Enter Details</h3>
-                    <label for="name">Name</label>
-                    <input type="text" name="" id="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email" required>
-                    <button id="submit-btn" type="submit">Schedule Event</button>
-                </form>
-            </section>
-
         </div>
         
-        <script src="script/register.js"></script>
+        <script src="script/confirm.js"></script>
 
     </body>
 </html>

@@ -1,19 +1,3 @@
-// var event = {
-//     name: "Pricing Review",
-//     organizer: "ACME Sales",
-//     duration: 15,
-//     description: "Our team will meet with you to review pricing options.",
-//     date: new Date(),
-//     time: "9:00",
-//     attendees: [],
-//     get getName() {
-//         return this.name;
-//     },
-//     set setName(value) {
-//         this.name = value;
-//     }
-// };
-
 var event = {
     name: "Pricing Review",
     organizer: "ACME Sales",

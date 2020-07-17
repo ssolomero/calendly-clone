@@ -107,8 +107,13 @@
     width: 100%;
     margin-left: 5px;
 
+    &:hover {
+        opacity: 0.5;
+    }
+
     &:focus {
         outline: 0;
+        opacity: 0.5;
     }
 }
 
