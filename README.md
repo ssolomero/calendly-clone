@@ -8,4 +8,5 @@ I used sessionStorage to pass along the event details.
 
 
 View the inspo: https://www.calendly-embed.com/pop-up-text-2/
+
 View my version: https://calendly-clone.vercel.app/
